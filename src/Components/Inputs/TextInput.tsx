@@ -6,7 +6,7 @@ import { InputProps } from "./Types.d";
 const InputWrapper = styled.div``;
 
 const InputBox = styled.input`
-  height: ${props => props.height || "40px"};
+  height: ${props => props.height || "30px"};
   width: ${props => props.width || "400px"};
   border-radius: 5px;
   border: 1px solid #eee;

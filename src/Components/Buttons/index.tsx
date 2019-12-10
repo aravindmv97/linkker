@@ -20,8 +20,8 @@ const Button = styled.div<Pick<ButtonProps, "size">>`
   color: #fff;
   background: ${props =>
     props.size === "primary"
-      ? "gray"
-      : props => (props.size === "secondary" ? "#eee" : "#000")};
+      ? "#36BEA1"
+      : props => (props.size === "secondary" ? "#eee" : "#36BEA1")};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,13 +39,11 @@ export const Buttons: FC<ButtonProps> = ({
   margin,
   name,
   size,
-  onCLickProps
+  onClickProps
 }) => {
   return (
-    <ButtonWrapper margin={margin}>
-      <Button onClick={onCLickProps} size={size}>
-        {name}
-      </Button>
+    <ButtonWrapper margin={margin} onClick={onClickProps}>
+      <Button size={size}>{name}</Button>
     </ButtonWrapper>
   );
 };

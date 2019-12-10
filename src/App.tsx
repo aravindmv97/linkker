@@ -17,3 +17,6 @@ const App: React.FC = () => {
 };
 
 export default App;
+
+// #58D68D
+// #36BEA1
